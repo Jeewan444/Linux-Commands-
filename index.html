@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Command Reference</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="heading"><h2> Prepared By Jeewan Kumar Thakur</h2></div>
+    <div class="container">
+        <h1> 50 Basic Linux Command Reference</h1>
+        <div class="command-list">
+            <p><b>ls</b> - list the files and directories in the current directory</p>
+            <p><b>ls -l</b> - list the files and directories in the current directory with details</p>
+            <p><b>cd</b> - change the current directory</p>
+            <p><b>cd Documents</b></p>
+            <p><b>cd dir_name</b></p>
+            <p><b>cd ~</b> - change to the home directory</p>
+            <p><b>cd ..</b> - change to the parent directory</p>
+            <p><b>cd /</b> - change to the root directory</p>
+            <p><b>cd ~user</b> - change to the home directory of the user</p>
+            <p><b>cd -</b> - change to the previous directory</p>
+            <p><b>mkdir</b> - create a new directory</p>
+            <p><b>mkdir rohan</b></p>
+            <p><b>mkdir dir1 dir2 dir3</b></p>
+            <p><b>mkdir -p dir1/dir2/dir3</b> - create a new directory with parent directories</p>
+            <p><b>rmdir</b> - remove a directory</p>
+            <p><b>rmdir rohan</b></p>
+            <p><b>pwd</b> - print the current working directory</p>
+            <p><b>pwd</b></p>
+            <p><b>pwd -P</b> - print the current working directory with the actual path</p>
+            <p><b>cp</b> - copy files or directories</p>
+            <p><b>cp example.txt backup/</b></p>
+            <p><b>mv</b> - move or rename files or directories</p>
+            <p><b>mv example.txt backup</b></p>
+            <p><b>rm</b> - remove files or directories</p>
+            <p><b>rm example.txt</b></p>
+            <p><b>rm -r dir_name</b> - remove a directory and all its contents</p>
+            <p><b>touch</b> - create a new empty file or update the timestamp of an existing file</p>
+            <p><b>touch shayan.txt</b></p>
+            <p><b>cat</b> - concatenate and display files</p>
+            <p><b>cat example.txt</b></p>
+            <p><b>man</b> - manual for a command</p>
+            <p><b>man ls</b></p>
+            <p><b>man -k keyword</b> - search for a keyword in the manual pages</p>
+            <p><b>man -k cd</b></p>
+            <p><b>man -a command</b> - display the manual for a command with all sections</p>
+            <p><b>man -a ls</b></p>
+            <p><b>man -f command</b> - display the manual for a command with a brief description</p>
+            <p><b>man -f ls</b></p>
+            <p><b>man -h command</b> - display the manual for a command with a help message</p>
+            <p><b>htop</b> - an interactive process viewer and system monitor</p>
+            <p><b>htop</b></p>
+            <p><b>chmod</b> - change the permissions of a file or directory</p>
+            <p><b>chmod 700 file.txt</b></p>
+            <p><b>chown</b> - change the owner of a file or directory</p>
+            <p><b>chown new_owner example.txt</b></p>
+            <p><b>tar</b> - create or extract compressed archive files</p>
+            <p><b>tar cf archive.tar file1 file2 file3</b></p>
+            <p><b>gzip</b> - compress files</p>
+            <p><b>gzip file.txt</b></p>
+            <p><b>gunzip</b> - decompress compressed files</p>
+            <p><b>gunzip file.txt.gz</b></p>
+            <p><b>ssh</b> - connect to a remote server securely</p>
+            <p><b>ssh username@server_address</b></p>
+            <p><b>scp</b> - securely copy files between systems</p>
+            <p><b>scp myfile.txt user@remotehost:/home/user/</b></p>
+            <p><b>ping</b> - test network connectivity</p>
+            <p><b>ping 8.8.8.8</b></p>
+            <p><b>ifconfig</b> - display or configure network interfaces</p>
+            <p><b>ifconfig</b></p>
+            <p><b>netstat</b> - display network connection information</p>
+            <p><b>netstat</b></p>
+            <p><b>route</b> - view or configure network routing tables</p>
+            <p><b>route [options] [add/delete/show]</b></p>
+            <p><b>top</b> - display system resource usage and processes</p>
+            <p><b>top</b></p>
+            <p><b>ps</b> - display information about running processes</p>
+            <p><b>ps aux</b></p>
+            <p><b>kill</b> - terminate a process</p>
+            <p><b>kill [PID]</b></p>
+            <p><b>systemctl</b> - control system services and settings</p>
+            <p><b>systemctl start nginx</b> - Start the nginx service</p>
+            <p><b>systemctl status nginx</b> - Check the status of the nginx service</p>
+            <p><b>systemctl stop nginx</b> - Stop the nginx service</p>
+            <p><b>service</b> - control system services</p>
+            <p><b>service apache2 start</b></p>
+            <p><b>service apache2 stop</b></p>
+            <p><b>useradd</b> - add a new user to the system</p>
+            <p><b>useradd jeewan</b></p>
+            <p><b>passwd</b> - change the password for a user</p>
+            <p><b>passwd jeewan</b></p>
+            <p><b>userdel</b> - delete a user from the system</p>
+            <p><b>userdel jeewan</b></p>
+            <p><b>su</b> - switch user to become another user</p>
+            <p><b>su john</b></p>
+            <p><b>sudo</b> - execute a command as another user or with elevated privileges</p>
+            <p><b>uptime</b> - display system uptime and load average</p>
+            <p><b>uptime</b></p>
+            <p><b>w</b> - display information about users currently logged in</p>
+            <p><b>whoami</b> - display the current user name</p>
+            <p><b>df</b> - display disk space usage</p>
+            <p><b>df</b></p>
+            <p><b>du</b> - display disk usage by file or directory</p>
+            <p><b>du</b></p>
+            <p><b>mount</b> - mount a file system</p>
+            <p><b>sudo mount /dev/sdb1 /mnt/usb</b></p>
+            <p><b>umount</b> - unmount a file system</p>
+            <p><b>sudo umount /mnt/usb</b></p>
+            <p><b>date</b> - display or set the system date and time</p>
+            <p><b>date</b></p>
+            <p><b>whoami</b> - display the current user name</p>
+            <p><b>which</b> - locate a program or command in the system path</p>
+            <p><b>ls</b></p>
+            <p><b>finger</b> - displays all the information about user</p>
+            <p><b>finger harry</b></p>
+            <p><b>uname</b> - display system information</p>
+            <p><b>uname</b></p>
+            <p><b>uname -a</b></p>
+            <p><b>history</b> - display a list of previously executed commands</p>
+            <p><b>history</b></p>
+            <p><b>echo</b> - display text or variables to the console</p>
+            <p><b>echo 'I need Tshirt from codeswear!'</b></p>
+            <p><b>tee</b> - redirect output to both a file and the console</p>
+            <p><b>ls | tee file.txt</b></p>
+            <p><b>locate</b> - locate any file on the system</p>
+            <p><b>locate file.txt</b></p>
+            <p><b>sort</b> - sort lines of text in a file or input</p>
+            <p><b>sort file.txt</b></p>
+            <p><b>uniq</b> - remove duplicate lines from a file or input</p>
+            <p><b>uniq file.txt</b></p>
+            <p><b>head/tail</b> - display the first/last few lines of a file or input</p>
+            <p><b>head file.txt</b></p>
+            <p><b>tail file.txt</b></p>
+        </div>
+    </div>
+</body>
+</html>

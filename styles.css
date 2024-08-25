@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e726a, #802a98);
+    color: #fff;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevents the body from scrolling */
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0; /* Add space around the heading */
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    width: 65%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 1200px;
+    max-height: 90vh; /* Ensure the container does not exceed viewport height */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow-y: auto; /* Enables scrolling within the container */
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.command-list {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.command-list p {
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.command-list p:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.command-list b {
+    color: #ffcc00;
+    font-weight: 600;
+}
